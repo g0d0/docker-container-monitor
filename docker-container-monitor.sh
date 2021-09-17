@@ -1,9 +1,6 @@
 #!/bin/env bash
 
-# Example: ./docker-container-monitor.sh -h '5 seconds' -r 5s -f '{{.Container}},{{.CPUPerc}}' -o scaffold_mysql_stats.log
-
 usage() { echo "Usage: $0 [-h <hours>] [-r <rate_in_seconds>] [-f <docker_stats_format>] [-o <output_file>] [-c <container_name>]" 1>&2; exit 1; }
-
 
 TOTAL_TIME_SPENT='5 minute'
 
